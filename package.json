@@ -2,9 +2,23 @@
   "name": "detect-console-log",
   "version": "1.0.0",
   "description": "Warn if console.log appears in staged changes (Husky pre-commit).",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/highnamee/detect-console-log.git"
+  },
+  "bugs": {
+    "url": "https://github.com/highnamee/detect-console-log/issues"
+  },
+  "homepage": "https://github.com/highnamee/detect-console-log#readme",
   "bin": {
     "detect-console-log": "dist/detect-console-log.js"
   },
+  "keywords": [
+    "detect-console-log-checker",
+    "git-hook",
+    "lint",
+    "pre-commit"
+  ],
   "files": [
     "dist"
   ],
