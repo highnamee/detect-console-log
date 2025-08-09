@@ -9,12 +9,19 @@ Install packages
 ```bash
 npm install --save-dev detect-console-log husky
 npx husky init
+
+# or with yarn
+yarn add -D detect-console-log husky
+yarn husky init
 ```
 
 Add this line to `.husky/pre-commit`
 
 ```bash
 npm exec detect-console-log
+
+# or with yarn
+yarn detect-console-log
 ```
 
 Optional flags:
