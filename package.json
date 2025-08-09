@@ -1,0 +1,29 @@
+{
+  "name": "detect-console-log",
+  "version": "1.0.0",
+  "description": "Warn if console.log appears in staged changes (Husky pre-commit).",
+  "bin": {
+    "detect-console-log": "dist/detect-console-log.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsup",
+    "prepare": "husky",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "devDependencies": {
+    "@types/node": "^24.2.1",
+    "husky": "^9.0.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.5.0"
+  },
+  "dependencies": {
+    "chalk": "^5.5.0"
+  }
+}
